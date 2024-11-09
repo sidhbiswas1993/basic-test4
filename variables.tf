@@ -1,4 +1,11 @@
-variable "subscription_id" {
+variable "rg_name" {
   type = string
-  default = "920220c1-481b-4246-8e07-2d3b4fea007c"
+  description = "resource group"
+  default = "Test-RG-00"
+}
+
+variable "rg-location" {
+  type = string
+  description = "Location for RG"
+  default = "westus"
 }
